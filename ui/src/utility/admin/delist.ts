@@ -18,9 +18,9 @@ export const delist = (
     target: `${packageId}::marketplace::delist`,
     arguments: [
       tx.object(adminCapId),
-      tx.object(listHeroId)
+      tx.object(listHeroId),
     ]
   });
-  
+
   return tx;
 };

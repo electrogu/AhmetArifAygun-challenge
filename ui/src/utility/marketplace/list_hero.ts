@@ -21,9 +21,9 @@ export const listHero = (
     target: `${packageId}::marketplace::list_hero`,
     arguments: [
       tx.object(heroId),
-      tx.pure.u64(priceInMist)
+      tx.pure.u64(priceInMist),
     ]
   });
-  
+
   return tx;
 };

@@ -14,9 +14,9 @@ export const battle = (packageId: string, heroId: string, arenaId: string) => {
     target: `${packageId}::arena::battle`,
     arguments: [
       tx.object(heroId),
-      tx.object(arenaId)
+      tx.object(arenaId),
     ]
   });
-  
+
   return tx;
 };

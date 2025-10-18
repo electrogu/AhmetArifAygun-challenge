@@ -19,7 +19,7 @@ export const changePrice = (packageId: string, listHeroId: string, newPriceInSui
     arguments: [
       tx.object(adminCapId),
       tx.object(listHeroId),
-      tx.pure.u64(newPriceInMist)
+      tx.pure.u64(newPriceInMist),
     ]
   });
 

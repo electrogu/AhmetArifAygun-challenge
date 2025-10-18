@@ -22,7 +22,7 @@ export const buyHero = (packageId: string, listHeroId: string, priceInSui: strin
     target: `${packageId}::marketplace::buy_hero`,
     arguments: [
       tx.object(listHeroId),
-      paymentCoin
+      paymentCoin,
     ]
   })
   return tx;

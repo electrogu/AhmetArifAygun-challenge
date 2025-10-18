@@ -12,9 +12,9 @@ export const createArena = (packageId: string, heroId: string) => {
   tx.moveCall({
     target: `${packageId}::arena::create_arena`,
     arguments: [
-      tx.object(heroId)
+      tx.object(heroId),
     ]
   });
-  
+
   return tx;
 };
